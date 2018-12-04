@@ -20,16 +20,18 @@ namespace HelloThrift.Server
                 TBinaryProtocol.Factory factory = new TBinaryProtocol.Factory();
 
                 //关联处理器与服务的实现
-                TProcessor processor = new SchoolService.Processor(new MySchoolService());
+                TProcessor helloProcessor = new HelloService.Processor(new MyHelloService());
+                TProcessor schoolProcessor = new SchoolService.Processor(new MySchoolService());
 
-                //创建服务端对象
-                //TServer helloServer = new TThreadPoolServer(processor, serverTransport, new TTransportFactory(), factory);
-
-                TServer schoolServer = new TThreadPoolServer(processor, serverTransport, new TTransportFactory(), factory);
+                //创建服务端对象               
+                var processorMulti = new TMultiplexedProcessor();
+                processorMulti.RegisterProcessor("helloService", helloProcessor);
+                processorMulti.RegisterProcessor("schoolService", schoolProcessor);
+                TServer server = new TThreadPoolServer(processorMulti, serverTransport, new TTransportFactory(), factory);
 
                 Console.WriteLine("服务端正在监听9081端口");
 
-                schoolServer.Serve();
+                server.Serve();
             }
             catch (TTransportException ex)//捕获异常信息
             {

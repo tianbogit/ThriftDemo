@@ -9,21 +9,20 @@ namespace HelloThrift.Client
     {
         static void Main(string[] args)
         {
-            try
-            {
+            using (TTransport transport = new TSocket("localhost", 9081))
+            using (TProtocol protocol = new TBinaryProtocol(transport))
 
-                //设置服务端端口号和地址
-                TTransport transport = new TSocket("localhost", 9081);
+            using (var protocolHelloService = new TMultiplexedProtocol(protocol, "helloService"))
+            using (var clientHello = new HelloService.Client(protocolHelloService))
+            using (var protocolSchoolService = new TMultiplexedProtocol(protocol, "schoolService"))
+            using (var clientSchool = new SchoolService.Client(protocolSchoolService))
+            {
                 transport.Open();
 
-                //设置传输协议为二进制传输协议
-                TProtocol protocol = new TBinaryProtocol(transport);
-
-                //创建客户端对象
-                SchoolService.Client client = new SchoolService.Client(protocol);
-
+                Console.WriteLine(clientHello.HelloString("hello world"));
+                Console.WriteLine("===========================");
                 //调用服务端的方法
-                var result = client.GetAllBanji();
+                var result = clientSchool.GetAllBanji();
                 Console.WriteLine(result.SchoolName);
                 foreach (var item in result.AllBanji)
                 {
@@ -33,14 +32,9 @@ namespace HelloThrift.Client
                         Console.WriteLine("----" + student.StudentName);
                     }
                 }
-
-                Console.ReadKey();
-
             }
-            catch (TTransportException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+
+            Console.ReadKey();
         }
     }
 }
