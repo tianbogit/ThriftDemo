@@ -1,2 +1,2 @@
 # ThriftDemo
-基于Thrift的rpc通讯demo
+基于Thrift实现rpc通讯demo
