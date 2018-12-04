@@ -1,0 +1,12 @@
+F:\netcore\HelloThrift\HelloThrift.Interface\bin\Debug\netcoreapp2.1\HelloThrift.Interface.deps.json
+F:\netcore\HelloThrift\HelloThrift.Interface\bin\Debug\netcoreapp2.1\HelloThrift.Interface.dll
+F:\netcore\HelloThrift\HelloThrift.Interface\obj\Debug\netcoreapp2.1\HelloThrift.Interface.csprojAssemblyReference.cache
+F:\netcore\HelloThrift\HelloThrift.Interface\obj\Debug\netcoreapp2.1\HelloThrift.Interface.csproj.CoreCompileInputs.cache
+F:\netcore\HelloThrift\HelloThrift.Interface\obj\Debug\netcoreapp2.1\HelloThrift.Interface.AssemblyInfoInputs.cache
+F:\netcore\HelloThrift\HelloThrift.Interface\obj\Debug\netcoreapp2.1\HelloThrift.Interface.AssemblyInfo.cs
+F:\netcore\HelloThrift\HelloThrift.Interface\bin\Debug\netcoreapp2.1\HelloThrift.Interface.pdb
+F:\netcore\HelloThrift\HelloThrift.Interface\obj\Debug\netcoreapp2.1\HelloThrift.Interface.dll
+F:\netcore\HelloThrift\HelloThrift.Interface\obj\Debug\netcoreapp2.1\HelloThrift.Interface.pdb
+F:\netcore\HelloThrift\HelloThrift.Interface\bin\Debug\netcoreapp2.1\HelloThrift.Model.dll
+F:\netcore\HelloThrift\HelloThrift.Interface\bin\Debug\netcoreapp2.1\HelloThrift.Model.pdb
+F:\netcore\HelloThrift\HelloThrift.Interface\obj\Debug\netcoreapp2.1\HelloThrift.Interface.csproj.CopyComplete

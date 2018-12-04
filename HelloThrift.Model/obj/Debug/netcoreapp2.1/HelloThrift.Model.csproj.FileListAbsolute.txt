@@ -1,0 +1,9 @@
+F:\netcore\HelloThrift\HelloThrift.Model\bin\Debug\netcoreapp2.1\HelloThrift.Model.deps.json
+F:\netcore\HelloThrift\HelloThrift.Model\bin\Debug\netcoreapp2.1\HelloThrift.Model.dll
+F:\netcore\HelloThrift\HelloThrift.Model\obj\Debug\netcoreapp2.1\HelloThrift.Model.csproj.CoreCompileInputs.cache
+F:\netcore\HelloThrift\HelloThrift.Model\obj\Debug\netcoreapp2.1\HelloThrift.Model.AssemblyInfoInputs.cache
+F:\netcore\HelloThrift\HelloThrift.Model\obj\Debug\netcoreapp2.1\HelloThrift.Model.AssemblyInfo.cs
+F:\netcore\HelloThrift\HelloThrift.Model\bin\Debug\netcoreapp2.1\HelloThrift.Model.pdb
+F:\netcore\HelloThrift\HelloThrift.Model\obj\Debug\netcoreapp2.1\HelloThrift.Model.csprojAssemblyReference.cache
+F:\netcore\HelloThrift\HelloThrift.Model\obj\Debug\netcoreapp2.1\HelloThrift.Model.dll
+F:\netcore\HelloThrift\HelloThrift.Model\obj\Debug\netcoreapp2.1\HelloThrift.Model.pdb
